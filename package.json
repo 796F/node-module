@@ -1,0 +1,47 @@
+{
+  "version": "0.0.0",
+  "name": "har-converter",
+  "description": "har convert",
+  "author": "ahmad <email>(ahmadnassri.com",
+  "homepage": "homepage.com",
+  "repository": "ahmadnassri/har-converter",
+  "license": "MIT",
+  "main": "./src/index.js",
+  "bin": "./bin/har-converter",
+  "keywords": [
+    "unnamed"
+  ],
+  "engines": {
+    "node": ">=0.10"
+  },
+  "files": [
+    "src",
+    "bin"
+  ],
+  "bugs": {
+    "url": "https://github.com/ahmadnassri/har-converter/issues"
+  },
+  "scripts": {
+    "test": "standard && mocha --reporter spec",
+    "travis": "standard && mocha --reporter spec",
+    "coverage": "istanbul cover ./node_modules/mocha/bin/_mocha",
+    "codeclimate": "codeclimate < coverage/lcov.info"
+  },
+  "standard": {
+    "ignore": [
+      "**/test/fixtures/**"
+    ]
+  },
+  "devDependencies": {
+    "codeclimate-test-reporter": "*",
+    "glob": "*",
+    "istanbul": "*",
+    "mocha": "*",
+    "should": "*",
+    "standard": "*"
+  },
+  "dependencies": {
+    "commander": "*",
+    "debug": "*"
+  }
+}
