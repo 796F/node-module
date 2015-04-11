@@ -1,13 +1,13 @@
 {
   "version": "0.0.0",
-  "name": "har-converter",
-  "description": "har convert",
-  "author": "ahmad <email>(ahmadnassri.com",
-  "homepage": "homepage.com",
-  "repository": "ahmadnassri/har-converter",
+  "name": "unnamed",
+  "description": "unnamed",
+  "author": "Ahmad Nassri <ahmad@ahmadnassri.com> (https://www.ahmadnassri.com/)",
+  "homepage": "https://github.com/ahmadnassri/unnamed",
+  "repository": "ahmadnassri/unnamed",
   "license": "MIT",
   "main": "./src/index.js",
-  "bin": "./bin/har-converter",
+  "bin": "./bin/unnamed",
   "keywords": [
     "unnamed"
   ],
@@ -15,26 +15,19 @@
     "node": ">=0.10"
   },
   "files": [
-    "src",
-    "bin"
+    "bin",
+    "src"
   ],
   "bugs": {
-    "url": "https://github.com/ahmadnassri/har-converter/issues"
+    "url": "https://github.com/ahmadnassri/unnamed/issues"
   },
   "scripts": {
     "test": "standard && mocha --reporter spec",
-    "travis": "standard && mocha --reporter spec",
     "coverage": "istanbul cover ./node_modules/mocha/bin/_mocha",
     "codeclimate": "codeclimate < coverage/lcov.info"
   },
-  "standard": {
-    "ignore": [
-      "**/test/fixtures/**"
-    ]
-  },
   "devDependencies": {
     "codeclimate-test-reporter": "*",
-    "glob": "*",
     "istanbul": "*",
     "mocha": "*",
     "should": "*",
